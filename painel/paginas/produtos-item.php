@@ -9,12 +9,12 @@ foreach ($dados as $dado) {
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Blank Page</h1>
+                        <h1>Pagina Produtos</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Blank Page</li>
+                            <li class="breadcrumb-item"><a href="#">Pagina Produtos</a></li>
+                            <li class="breadcrumb-item active">Detalhes do produto:     </li>
                         </ol>
                     </div>
                 </div>
@@ -27,7 +27,9 @@ foreach ($dados as $dado) {
             <!-- Default box -->
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Title</h3>
+                    <h3 class="card-title">
+                        <?php echo $dado['nome']; ?>
+                    </h3>
 
                     <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -39,11 +41,25 @@ foreach ($dados as $dado) {
                     </div>
                 </div>
                 <div class="card-body">
-                    Start creating your amazing application!
+                    <div class="form-group">
+                        <label for="">Nome produto: </label>
+                        <input type="" disabled="" value="<?php echo $dado['nome']; ?>" class="input-block-level"/>                    
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nome produto: </label>
+                        <input type="" disabled="" value="<?php echo $dado['tipo']; ?>" class="input-block-level"/>                    
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nome produto: </label>
+                        <input type="" disabled="" value="<?php echo $dado['valor']; ?>" class="input-block-level"/>                    
+                    </div>
                 </div>
                 <!-- /.card-body -->
-                <div class="card-footer">
-                    Footer
+                <div class="card-footer ml-auto">
+                    <a href="?pg=produtos" class="btn btn-warning btn-lg">Voltar</a>
+                    <a href="?pg=produtos-editar&id=<?php echo $dado['id']; ?>" class="btn btn-success btn-lg">Editar                    
+                    <span class="fa fa-edit"></span>
+                    </a>
                 </div>
                 <!-- /.card-footer-->
             </div>
