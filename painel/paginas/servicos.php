@@ -1,6 +1,6 @@
 <?php
 $resultDados = new Conexao();
-$dados = $resultDados->selecionaDados('SELECT * FROM serviços');
+$dados = $resultDados->selecionaDados('SELECT * FROM servicos');
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -24,12 +24,18 @@ $dados = $resultDados->selecionaDados('SELECT * FROM serviços');
     <!-- /.content-header -->
 
     <!-- Main content -->
+    <section class="content">
+  
     <div class="row">
         <div class="col-12">
 
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">DataTable with default features</h3>
+                    <h3 class="card-title">
+                        <a href="?pg=produtos-inserir" class="btn btn-success btn-lg">
+                            <span class="fa fa-plus"></span>Novo Serviço
+                        </a>                                
+                    </h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -76,5 +82,6 @@ $dados = $resultDados->selecionaDados('SELECT * FROM serviços');
         <!-- /.col -->
     </div>
     <!-- /.content -->
+    </section>
 </div>
 <!-- /.content-wrapper -->

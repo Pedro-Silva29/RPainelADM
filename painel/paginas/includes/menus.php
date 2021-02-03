@@ -1,6 +1,4 @@
 
-
-
 <!-- Navbar -->
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -43,7 +41,7 @@
                 <img src="painel/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Reginaldo Lima</a>
+                <a href="#" class="d-block">Victor Tavares</a>
             </div>
         </div>
         <!-- Sidebar Menu -->

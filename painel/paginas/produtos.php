@@ -23,18 +23,18 @@ $dados = $resultDados->selecionaDados('SELECT * FROM produtos');
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <section class="content">
+    <section class= "content">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
 
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">
-                                <a href="?pg=produtos-inserir" class="btn btn-sucess btn-lg">
-                                    <span class="fa fa-plus"></span>Novo Produto
-                                </a>                                
-                            </h3>
+                                <h3 class="card-title">
+                                    <a href="?pg=produtos-inserir" class="btn btn-success btn-lg">
+                                        <span class="fa fa-plus"></span>Novo Produto
+                                    </a>                                
+                                </h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -84,6 +84,7 @@ $dados = $resultDados->selecionaDados('SELECT * FROM produtos');
         </div>
         <!-- /.container-fluid -->
     </section>
+   
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->

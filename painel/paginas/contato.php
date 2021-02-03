@@ -1,4 +1,7 @@
-
+<?php
+$resultDados = new Conexao();
+$dados = $resultDados->selecionaDados('SELECT * FROM contato');
+?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -6,7 +9,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Contato <small> - Página Contato do Painel Administrativo</small></h1>
+                    <h1 class="m-0">Produtos <small> - Página Contato</small></h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -27,7 +30,11 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">DataTable with default features</h3>
+                            <h3 class="card-title">
+                                <a href="?pg=contato-inserir" class="btn btn-success btn-lg">
+                                    <span class="fa fa-plus"></span>Novo Contato
+                                </a>                                
+                            </h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -36,8 +43,8 @@
                                     <tr>
                                         <th>Código</th>
                                         <th>Produto</th>
-                                        <th>E-mail</th>
-                                        <th>Mensagem</th>
+                                        <th>Tipo</th>
+                                        <th>Valor (R$)</th>
                                         <th>Ações</th>
                                     </tr>
                                 </thead>
@@ -51,11 +58,11 @@
                                             <td><?php echo $dado['id']; ?></td>
                                             <td><?php echo $dado['nome']; ?></td>
                                             <td><?php echo $dado['email']; ?></td>
-                                            <td><?php echo $dado['msg']; ?></td>
+                                            <td><?php echo $dado['mensagem']; ?></td>
                                             <td>
-                                                <a href="?pg=contato-visualizar&id=<?php echo $dado['id']; ?>" class="btn btn-outline-success"><span class="fa fa-eye"></span></a>
-                                                <a href="#" class="btn btn-outline-warning"><span class="fa fa-edit"></span></a>
-                                                <a href="#" class="btn btn-outline-danger"><span class="fa fa-trash"></span></a>
+                                                <a href="?pg=contato-item&id=<?php echo $dado['id']; ?>" class="btn btn-outline-success"><span class="fa fa-eye"></span></a>
+                                                
+                                                <a href="?pg=contato-excluir&id=<?php echo $dado['id']; ?>" class="btn btn-outline-danger"><span class="fa fa-trash"></span></a>
                                             </td>
                                         </tr>
 
