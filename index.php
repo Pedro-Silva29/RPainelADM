@@ -308,9 +308,22 @@ if ($pg) {
             include_once 'painel/paginas/dashboard.php';
             break;
     }
-} else {
-    //não existe
-    include_once 'painel/paginas/dashboard.php';
+} else {   
+    
+    
+    //header
+    include_once './site/paginas/includes/header.php';
+    //banner
+    include_once './site/paginas/includes/banner.php';
+    //navbar
+    include_once './site/paginas/includes/navegacao.php';
+    //página em questão 
+    include_once './site/paginas/contato.php';
+    include_once './site/paginas/includes/footer.php';
+    //executar os arquivos da páginas 
+    
+    //footer
+    //navegação 
 }
 
 
