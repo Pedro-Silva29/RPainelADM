@@ -303,6 +303,22 @@ if ($pg) {
                 echo 'Login ou senha inválidos.';
             }
             break;
+            
+            
+            //*************************************************************
+            //site
+            case 'inicio-site':
+                
+                break;
+            case 'contato-site':
+                
+                break;
+            case 'serviços-site':
+                
+                break;
+            case 'sobre-site':
+                
+                break;
 
         default:
             include_once 'painel/paginas/dashboard.php';
@@ -314,7 +330,7 @@ if ($pg) {
     //header
     include_once './site/paginas/includes/header.php';
     //banner
-    include_once './site/paginas/includes/banner.php';
+    //include_once './site/paginas/includes/banner.php';
     //navbar
     include_once './site/paginas/includes/navegacao.php';
     //página em questão 

@@ -12,16 +12,18 @@
             <li class="nav-item active"><a class="nav-link" href="?pg=produtos">Produtos</a> </li>
             <li class="nav-item active"><a class="nav-link" href="?pg=contato">Contato</a> </li>
         </ul>
-        <ul>
+        <ul class="navbar-nav">
             <li>
-            <a href="#" class="btn btn-outline-success"><span class="vic-user1"></span></a>                
+            <button class="btn btn-outline-success"><span class="vic-user1"></span></button>             
             </li>
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item dropdown">                
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Área Administrativa</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="?pg=login">Login</a>                   
+                    <a class="dropdown-item" href="#">Login</a>                   
+                   <a class="dropdown-item" href="#">Login</a>                   
+                    <a class="dropdown-item" href="#">Login</a>                   
                     <!--manusouza-->   
                 </div>
             </li>

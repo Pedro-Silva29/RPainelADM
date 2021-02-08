@@ -9,6 +9,9 @@
         
         <!--Plugins-->        
         
+        <!--icomoon-->
+        <link rel="stylesheet" href="site/plugins/icomoon/icomoon.css.css" />
+        
         <!--css-->
         <link rel="stylesheet" href="site/assets/css/stylo.css" />
 
