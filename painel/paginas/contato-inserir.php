@@ -35,11 +35,11 @@
 
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="nome">Produto</label>
+                                        <label for="nome">contato:</label>
                                         <input type="text" name="nome" value="" class="form-control" id="nome">
                                     </div>                                    
                                     <div class="form-group">
-                                        <label for="tipo">Tipo produto</label>
+                                        <label for="tipo">email:</label>
                                         <input type="text" value="" name="tipo" class="form-control" id="tipo">
                                     </div>
                                     <div class="form-group">

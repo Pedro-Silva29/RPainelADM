@@ -1,47 +1,47 @@
-
-
-
-    <!--container principal-->
-    <div class="container-fluid mt-5">
-
-        <h1 class="text-center">Contato</h1>
-        <form action="">
-            <div class="row">
-                <div class="col">                       
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Nome</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-                        </div> 
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Telefone: </label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Email: </label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Mensagem: </label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">                            
-                        <button class="btn-danger btn-block btn-lg"> Cadastrar</button>
-                    </div>
+<div class="container">
+    <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+            <!-- jquery validation -->
+            <div class="card card-success">
+                <div class="card-header">
+                    <h3 class="card-title">Nome produto</h3>
                 </div>
-                <div class="col">                    
-                    <img class="img-fluid" src="https://placehold.it/630x430" alt="" />
-                </div>
+                <!-- /.card-header -->
+                <!-- form start -->
+                <form action="?pg=produtos-inserir" method="POST">                            
+
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="nome">Produto</label>
+                            <input type="text" name="nome" value="" class="form-control" id="nome">
+                        </div>                                    
+                        <div class="form-group">
+                            <label for="tipo">Tipo produto</label>
+                            <input type="text" value="" name="tipo" class="form-control" id="tipo">
+                        </div>
+                        <div class="form-group">
+                            <label for="valor">Valor do produto em R$</label>
+                            <input type="text" value="" name="valor" class="form-control" id="valor">
+                        </div>
+                        <input type="hidden" value="" name="id">
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer text-right">
+                        <a href="?pg=produtos" class="btn btn-warning"><span class="fa fa-arrow-circle-o-left"></span> Voltar </a>
+                        <button type="submit" class="btn btn-success"><span class="fa fa-save"></span> Criar</button>
+                    </div>
+
+                </form>
             </div>
-        </form>
+            <!-- /.card -->
+        </div>
+        <!--/.col (left) -->
+        <!-- right column -->
+        <div class="col-md-6">
+
+        </div>
+        <!--/.col (right) -->
     </div>
-    <!--fim da container contato-->
+    <!-- /.row -->
+</div><!-- /.container-fluid -->

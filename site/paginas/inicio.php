@@ -1,97 +1,67 @@
-<!DOCTYPE HTML>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Rachel´s Design</title>
-        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
-    </head>
-    <body>
-        <div class="container-fluid">
-           
-            <!--banner-->
-            <div class="row">
-                <img src="assets/img/rd1.jpg" alt="" />
-            </div>
 
-             <!--navegação-->         
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="?pg=inicio">Inicio</a> </li>
-                        <li class="nav-item active"><a class="nav-link" href="?pg=sobre">Sobre</a> </li>
-                        <li class="nav-item active"><a class="nav-link" href="?pg=servicos">serviços</a> </li>
-                        <li class="nav-item active"><a class="nav-link" href="?pg=produtos">Produtos</a> </li>
-                        <li class="nav-item active"><a class="nav-link" href="?pg=contato">Contato</a> </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-                    </form>
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Área Administrativa</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="?pg=login">Login</a>
-                                    <a class="dropdown-item" href="?pg=login2">Login2</a>
-                                    <a class="dropdown-item" href="?pg=login3">Login3</a>
-                                    <a class="dropdown-item" href="?pg=login4">Login4</a>
-                                    <!--manusouza-->   
-                                </div>
-                            </li>
-                        </ul>
-                </div>
-            </nav>
-            <!--fim da navegação-->
+<!--container principal-->
+<div class="container mt-5 p-4">
 
-            <!--container principal-->
-            <div class="container-fluid mt-5">
-
-                <h1 class="text-center">Contato</h1>
-                <form action="">
-                    <div class="row">
-                        <div class="col">                       
-                            <div class="form-group">
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Nome</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-                                </div> 
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">Telefone: </label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">Email: </label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Mensagem: </label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">                            
-                                <button class="btn-danger btn-block btn-lg"> Cadastrar</button>
-                            </div>
-                        </div>
-                        <div class="col">                    
-                            <img class="img-fluid" src="https://placehold.it/630x430" alt="" />
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <!--fim da container contato-->
+    <div class="row">
+        <div class="col-6">
+            <img class="img-fluid w-50" src="site/assets/img/kisspng-logo-oi-symbol-clip-art-logotipos-5b50bd0d4445e2.7930440115320179332797.jpg" alt="" />
+        </div>
+        <div class="col-6">
 
         </div>
-    </body>
-</html>
+    </div>
+    <br>
+    <div class="row">
+
+        <!--slides-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" ></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="site/assets/img/paisg1.jpg" alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="site/assets/img/paisg2.jpg" alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="site/assets/img/pais3.jpg" alt="Terceiro Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        <!--fim dos slides-->
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-6">
+
+        </div>
+        <div class="col-6">               
+            <img class="img-fluid w-50"src="site/assets/img/kisspng-oi-logo-telemar-norte-leste-s-a-clip-art-logo-oi-5b4e091df300f7.9603257215318407979954.jpg" alt="" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <img class="img-fluid w-50" src="site/assets/img/kisspng-oi-logo-telemar-norte-leste-s-a-logo-oi-5b4e091c660233.3448880515318407964178.jpg" alt="" />
+        </div>
+        <div class="col-6">
+
+        </div>
+    </div>
+
+</div>
+<!--fim da container contato-->
+
+

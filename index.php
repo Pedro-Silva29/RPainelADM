@@ -226,6 +226,7 @@ if ($pg) {
             break;
 
         case 'contato':
+            //contato
             include_once 'painel/paginas/includes/header.php';
             include_once 'painel/paginas/includes/menus.php';
             include_once 'painel/paginas/contato.php';
@@ -245,7 +246,7 @@ if ($pg) {
             include_once 'painel/paginas/includes/footer.php';
             break;
 
-          case 'contato-excluir':
+        case 'contato-excluir':
 
             $parametros = array(
                 ':id' => $_GET['id'],
@@ -303,30 +304,86 @@ if ($pg) {
                 echo 'Login ou senha inválidos.';
             }
             break;
-            
-            
-            //*************************************************************
-            //site
-            case 'inicio-site':
-                
-                break;
-            case 'contato-site':
-                
-                break;
-            case 'serviços-site':
-                
-                break;
-            case 'sobre-site':
-                
-                break;
 
+
+        //*************************************************************
+        //site
+        case 'inicio-site':
+            //header
+            include_once './site/paginas/includes/header.php';
+            //banner
+            //include_once './site/paginas/includes/banner.php';
+            //navbar
+            include_once './site/paginas/includes/navegacao.php';
+            //página em questão 
+            include_once './site/paginas/inicio.php';
+            //footer
+            include_once './site/paginas/includes/footer.php';
+
+            break;
+        
+        case 'contato-site':
+            //header
+            include_once './site/paginas/includes/header.php';
+            //banner
+            //include_once './site/paginas/includes/banner.php';
+            //navbar
+            include_once './site/paginas/includes/navegacao.php';
+            //página em questão 
+            include_once './site/paginas/contato.php';
+            include_once './site/paginas/includes/footer.php';
+            break;
+
+        case 'produtos-site':
+            //incluir a página produtos
+            //header
+            include_once './site/paginas/includes/header.php';
+            //banner
+            //include_once './site/paginas/includes/banner.php';
+            //navbar
+            include_once './site/paginas/includes/navegacao.php';
+            //página em questão 
+            include_once './site/paginas/produtos.php';
+            //footer    
+            include_once './site/paginas/includes/footer.php';
+            break;  
+        
+        case 'serviços-site':
+
+            //incluir a página serviços
+            //header
+            include_once './site/paginas/includes/header.php';
+            //banner
+            //include_once './site/paginas/includes/banner.php';
+            //navbar
+            include_once './site/paginas/includes/navegacao.php';
+            //página em questão 
+            include_once './site/paginas/serviços.php';
+            //footer    
+            include_once './site/paginas/includes/footer.php';
+            break;
+
+        case 'sobre-site':
+            //incluir a página sobre
+            //header
+            include_once './site/paginas/includes/header.php';
+            //banner
+            //include_once './site/paginas/includes/banner.php';
+            //navbar
+            include_once './site/paginas/includes/navegacao.php';
+            //página em questão 
+            include_once './site/paginas/sobre.php';
+            //footer    
+            include_once './site/paginas/includes/footer.php';
+            
+            break;
+
+  
         default:
             include_once 'painel/paginas/dashboard.php';
             break;
     }
-} else {   
-    
-    
+} else {
     //header
     include_once './site/paginas/includes/header.php';
     //banner
@@ -335,10 +392,9 @@ if ($pg) {
     include_once './site/paginas/includes/navegacao.php';
     //página em questão 
     include_once './site/paginas/contato.php';
+    //footer    
     include_once './site/paginas/includes/footer.php';
     //executar os arquivos da páginas 
-    
-    //footer
     //navegação 
 }
 

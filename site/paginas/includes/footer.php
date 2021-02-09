@@ -1,7 +1,7 @@
 
 <!--footer-->
 <footer>
-    <div class="container">
+    <div class="container-fluid">
 
         <!--Rodape-->
         <div class="row p-4 alert-dark">
