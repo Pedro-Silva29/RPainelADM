@@ -1,10 +1,12 @@
 
 <div class="container-fluid w-100">
- 
+
     <!--banner-->
     <div class="row justify-content-center">
         <img class="img-fluid d-block w-100 h-100" src="site/assets/img/tfraquel.png" alt="" />
     </div>
+
+</div>
 
 <!--navegação-->         
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -12,9 +14,9 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-expand-lg navbar-collapse" id="conteudoNavbarSuportado">
+    <div class="container collapse navbar-expand-lg navbar-collapse" id="conteudoNavbarSuportado">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="?pg=inicio-site">Inicio</a> </li>
+            <li class="nav-item active "><a class="nav-link" href="?pg=inicio-site">Inicio</a> </li>
             <li class="nav-item active"><a class="nav-link" href="?pg=sobre-site">Sobre</a> </li>
             <li class="nav-item active"><a class="nav-link" href="?pg=servicos-site">serviços</a> </li>
             <li class="nav-item active"><a class="nav-link" href="?pg=produtos-site">Produtos</a> </li>
@@ -41,6 +43,3 @@
     </div>
 </nav>
 <!--fim da navegação-->
-   
-    
-</div>

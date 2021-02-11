@@ -321,16 +321,34 @@ if ($pg) {
             include_once './site/paginas/includes/footer.php';
 
             break;
-        
+
         case 'contato-site':
             //header
             include_once './site/paginas/includes/header.php';
-            //banner
-            //include_once './site/paginas/includes/banner.php';
             //navbar
             include_once './site/paginas/includes/navegacao.php';
-            //página em questão 
-            include_once './site/paginas/contato.php';
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                //Função para inserção do Produto
+                //Pegando as variáveis via POST
+                $nome = $_POST['nome'];
+                $email = $_POST['email'];
+                $msg = $_POST['msg'];
+
+                //Tratar os arquivos via POST
+                $parametros = array(''
+                    . ':nome' => $nome,
+                    ':email' => $email,
+                    ':msg' => $msg
+                );
+                $resultDados = new Conexao();
+                $resultDados->intervencaoNoBanco('INSERT INTO '
+                        . 'contato (nome, email, msg) '
+                        . 'VALUES (:nome, :email, :msg)', $parametros);
+                include_once './site/paginas/contato-site.php';
+            } else {                
+                include_once './site/paginas/contato-site.php';
+            }
+
             include_once './site/paginas/includes/footer.php';
             break;
 
@@ -346,8 +364,8 @@ if ($pg) {
             include_once './site/paginas/produtos.php';
             //footer    
             include_once './site/paginas/includes/footer.php';
-            break;  
-        
+            break;
+
         case 'serviços-site':
 
             //incluir a página serviços
@@ -375,10 +393,10 @@ if ($pg) {
             include_once './site/paginas/sobre.php';
             //footer    
             include_once './site/paginas/includes/footer.php';
-            
+
             break;
 
-  
+
         default:
             include_once 'painel/paginas/dashboard.php';
             break;
