@@ -25,7 +25,7 @@
            foreach ($dados as $dado) {
                echo $dado['nome']. '<br>';
                echo $dado['email']. '<br>';
-               echo $dado['mensagem']. '<br>';
+               echo $dado['msg']. '<br>';
            }
            ?>
         </div><!-- /.container-fluid -->

@@ -4,7 +4,7 @@ function verificaLogin() {
     //No futuro as informações são 
     //trazidos do banco de dados
 
-    $usuario = 'Regi';
+    $usuario = 'vic';
     $senha = '123';
 
     //Verificar se as informações passados 

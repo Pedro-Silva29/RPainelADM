@@ -266,22 +266,22 @@ if ($pg) {
                 //Função para inserção do Produto
                 //Pegando as variáveis via POST
                 $nome = $_POST['nome'];
-                $tipo = $_POST['email'];
-                $valor = $_POST['mensagem'];
+                $email = $_POST['email'];
+                $msg = $_POST['msg'];
 
                 //Tratar os arquivos via POST
                 $parametros = array(''
                     . ':nome' => $nome,
                     ':email' => $email,
-                    ':mensagem' => $mensagem
+                    ':msg' => $msg
                 );
                 $resultDados = new Conexao();
                 $resultDados->intervencaoNoBanco('INSERT INTO '
-                        . 'contato (nome, email, mensagem) '
-                        . 'VALUES (:nome, :email, :mensagem)', $parametros);
+                        . 'contato (nome, email, msg) '
+                        . 'VALUES (:nome, :email, :msg)', $parametros);
                 include_once 'painel/paginas/contato.php';
             } else {
-                include_once 'painel/paginas/contato-inserir.php';
+                include_once 'painel/paginas/contato.php';
             }
 
             include_once 'painel/paginas/contato-inserir.php';

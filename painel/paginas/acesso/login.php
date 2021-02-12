@@ -26,7 +26,7 @@
 
                     <form action="?pg=dashboard" method="post">
                         <div class="input-group mb-3">
-                            <input name="usuario" type="text" class="form-control" placeholder="Usuário">
+                            <input name="usuario" type="text" autofocus="" class="form-control" placeholder="Usuário">
                             <div class="input-group-append">
                                 <div class="input-group-text">
                                     <span class="fas fa-envelope"></span>
@@ -34,7 +34,7 @@
                             </div>
                         </div>
                         <div class="input-group mb-3">
-                            <input name="senha" type="password" class="form-control" placeholder="Senha">
+                            <input name="senha" type="password" autofocus="" class="form-control" placeholder="Senha">
                             <div class="input-group-append">
                                 <div class="input-group-text">
                                     <span class="fas fa-lock"></span>
@@ -43,8 +43,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
-                            </div>                            
+                                <button type="submit" class="btn btn-primary btn-block">Entrar</button>                            </div>                            
                         </div>
                     </form>
                     <div class="social-auth-links text-center mt-2 mb-3">

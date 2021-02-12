@@ -10,7 +10,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Criar produtos</li>
+                        <li class="breadcrumb-item active">Criar Contatos</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -31,20 +31,20 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form action="?pg=produtos-inserir" method="POST">                            
+                        <form action="?pg=contato-inserir" method="POST">                            
 
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="nome">contato:</label>
+                                        <label for="nome">Nome: </label>
                                         <input type="text" name="nome" value="" class="form-control" id="nome">
                                     </div>                                    
                                     <div class="form-group">
-                                        <label for="tipo">email:</label>
-                                        <input type="text" value="" name="tipo" class="form-control" id="tipo">
+                                        <label for="tipo">email: </label>
+                                        <input type="email" value="" name="email" class="form-control" id="email">
                                     </div>
                                     <div class="form-group">
-                                        <label for="valor">Valor do produto em R$</label>
-                                        <input type="text" value="" name="valor" class="form-control" id="valor">
+                                        <label for="valor">Mensagem: </label>
+                                        <input type="text" value="" name="msg" class="form-control" id="msg">
                                     </div>
                                     <input type="hidden" value="" name="id">
                                 </div>

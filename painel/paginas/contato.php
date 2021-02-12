@@ -9,7 +9,7 @@ $dados = $resultDados->selecionaDados('SELECT * FROM contato');
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Produtos <small> - Página Contato</small></h1>
+                    <h1 class="m-0">Contato <small> - Página Contato</small></h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
@@ -31,7 +31,7 @@ $dados = $resultDados->selecionaDados('SELECT * FROM contato');
                     <div class="card">
                         <div class="card-header">
                             <h3 class="card-title">
-                                <a href="?pg=contato-inserir" class="btn btn-success btn-lg">
+                                <a href="?pg=contato" class="btn btn-success btn-lg">
                                     <span class="fa fa-plus"></span>Novo Contato
                                 </a>                                
                             </h3>
@@ -58,7 +58,7 @@ $dados = $resultDados->selecionaDados('SELECT * FROM contato');
                                             <td><?php echo $dado['id']; ?></td>
                                             <td><?php echo $dado['nome']; ?></td>
                                             <td><?php echo $dado['email']; ?></td>
-                                            <td><?php echo $dado['mensagem']; ?></td>
+                                            <td><?php echo $dado['msg']; ?></td>
                                             <td>
                                                 <a href="?pg=contato-item&id=<?php echo $dado['id']; ?>" class="btn btn-outline-success"><span class="fa fa-eye"></span></a>
                                                 
